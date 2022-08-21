@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GXSrjugX6L/h2xa3UOjeYycDRO/ZuURDpUuwCcMMLskl6K2jNdDgFWSDF4yOc5qsfa3ak/dpmXiRP98zZFsQNA==",
+  "dgSpecHash": "urSkLnOtsyBHZiph2c1q73BkaotG88JwAAVj8guzUxuA+vf9ZtSGHlCI2UHEJ5lKrooN7ym6Ad9ODumwRagjgw==",
   "success": true,
   "projectFilePath": "D:\\code\\ArticlesGN\\Articles\\Articles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\glenn\\.nuget\\packages\\faker.net\\2.0.154\\faker.net.2.0.154.nupkg.sha512",
     "C:\\Users\\glenn\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\glenn\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\glenn\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\glenn\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

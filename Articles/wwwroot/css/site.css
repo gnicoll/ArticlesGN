@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
   }
 }
 
@@ -15,4 +17,75 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.articles {
+    font-size: 1rem;
+}
+
+.article-tile {
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.article-tile__content {
+    box-sizing: border-box;
+}
+
+.article-tile__title {
+    line-height: 1.25rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    min-height: 1.25rem;
+    max-height: 3.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-tile__description {
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: .85rem;
+    max-height: 2.55rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-tile__readtime {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 1rem;
+}
+
+.article-tile__cta {
+    font-weight: 800;
+    font-size: .85rem;
+    line-height: 1rem;
+    height: 1rem;
+    text-transform: capitalize;
+    padding-left: 4rem;
+    background-image: url('../images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.article-tile__cta:hover {
+    background-position: center 0.5rem;
+}
+
+.article-tile__image {
+    width: 100%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+}
+
+.article-tile__image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
 }

@@ -1,4 +1,6 @@
 ﻿using Articles.Models;
+using Articles.Services;
+using Articles.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,27 +8,17 @@ namespace Articles.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private IArticlesService ArticlesService;
+        public HomeController()
         {
-            _logger = logger;
+            ArticlesService = new ArticlesService();
         }
 
-        public IActionResult Index()
+        public async Task<ViewResult> Index()
         {
-            return View();
-        }
+            ArticlesComponentModel latestResults = await ArticlesService.GetArticles();
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(latestResults);
         }
     }
 }
