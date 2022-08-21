@@ -1,22 +1,23 @@
 ﻿@model Articles.Models.ArticleModel
 
-<div class="article-tile p-4">
-    <div class="article-tile__image">
-        <img src="@Model.ImageUrl" alt="@Model.ArticleTitle" />
+<a href="/">
+    <div class="article-tile">
+        <div class="article-tile__image">
+            <img src="@Model.ImageUrl" alt="@Model.ArticleTitle" />
+        </div>
+        <div class="article-tile__content grid grid-cols-1 gap-4 py-4">
+            <div class="article-tile__readtime">
+                @Model.ReadTime minute read
+            </div>
+            <div class="article-tile__title">
+                @Model.ArticleTitle
+            </div>
+            <div class="article-tile__description">
+                @Model.Description
+            </div>
+            <div class="article-tile__cta flex">
+                <div>Read our insights</div>
+            </div>
+        </div>
     </div>
-    <div class="article-tile__content grid grid-cols-1 gap-4 py-4">
-        <div class="article-tile__readtime">
-            @Model.ReadTime minutes to read
-        </div>
-        <div class="article-tile__title">
-            @Model.ArticleTitle
-        </div>
-        <div class="article-tile__description">
-            @Model.Description
-        </div>
-        <div class="article-tile__cta flex">
-            <div>Read our insights</div>
-        </div>
-    </div>
-
-</div>
+</a>
