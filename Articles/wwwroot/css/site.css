@@ -30,6 +30,12 @@ body {
   margin-bottom: 60px;
 }
 
+footer {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
 .articles {
     font-size: 1rem;
 }
