@@ -3,7 +3,7 @@
 An example of an article card grid with responsive sizing.
 
 Hosted version can be found here
-https://articles.gnicoll.com/login_up.php?success_redirect_url=%2F
+http://articles.gnicoll.com
 
 All images were taken from 
 https://unsplash.com/
